@@ -341,7 +341,7 @@ $$P(Y = c_k) = \frac{\sum_{i=1}^N I(y_i = c_i)}{N} , k = 1,2,3,4.....,N$$
 
 设第j个特征$x^{(j)}$可能的取值集和为${a_{j1},a_{j2}....a_{js}}$， 条件概率：
 
-$$P(X^{(j)} = a_{j1} | Y = c_k) = \frac{\sum _1^N I(x_i^{(j)} = a_{j1},y = c_k)}{\sum _i^N I(y_i = c_k)}$$
+$$P(X^{(j)} = a_{jl} | Y = c_k) = \frac{\sum _i^N I(x_i^{(j)} = a_{jl} , y_i = c_k)}{\sum _i^N I(y_i = c_k)}$$
 
 *（计算每个特征下的样本的各种可能的取值的条件概率）*
 
@@ -361,7 +361,7 @@ $$P(X^{(j)} = a_{j1} | Y = c_k) = \frac{\sum _1^N I(x_i^{(j)} = a_{j1},y = c_k)}
 
 用最大似然估计可能会出现所要估计的概率值为0的情况，使分类产生误差，因此可以采用贝叶斯估计：
 
-$$P_{\lambda}(X^{(j)} = a_{j1} | Y = c_k) = \frac{\sum _1^N I(x_i^{(j)} = a_{j1},y = c_k) + \lambda }{\sum _i^N I(y_i = c_k) + S_j \lambda}$$
+$$P_{\lambda}(X^{(j)} = a_{jl} | Y = c_k) = \frac{\sum _i^N I(x_i^{(j)} = a_{jl} , y_i = c_k) + \lambda}{\sum _i^N I(y_i = c_k) + S_j * \lambda}$$
 
 $$P_{\lambda}(Y = c_k) = \frac{\sum_{i=1}^N I(y_i = c_i) + \lambda}{N + K \lambda} , k = 1,2,3,4.....,N$$
 
