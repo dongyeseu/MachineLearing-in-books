@@ -449,17 +449,15 @@ $$g ( D,A) = H(D) - H(D|A)$$
 
 通常通过**极小化决策树整体的损失函数或代价函数**来实现
 
-决策树的损失函数：
+决策树的损失函数：$$C_{\alpha} (T) =  \sum _{t=1}^{|T|} N_t H_t(T) + \alpha |T|$$
 
-$$C_{\alpha} (T) =  \sum _{t=1}^{|T|} N_t H_t(T) + \alpha_ |T|$$
-
-_$$C_{\alpha} (T) = C (T) + \alpha |T|$$
+$$C_{\alpha} (T) = C (T) + \alpha |T|$$
 
 其中：
 
-$$\alpha \geq 0$$
+$$\alpha \geq 0$$        
 
-$$C (T) = \sum _{t=1}^{|T|} N_t H_t(T) = - \sum _{t=1}^{|T|} \sum _{k=1}{K} N_{tk} log \frac{N_{tk}}{N_t}$$
+$$C (T) = \sum _{t=1}^{|T|} N_t H_t(T) = - \sum _{t=1}^{|T|} \sum _{k=1}{K} N_{tk} log \frac{N_{tk}}{N_t}$$ 
 
 
 
@@ -487,7 +485,7 @@ $$Gini(D) = 1 - \sum _{k=1}{K} (\frac{|C_k|}{D})^2$$
 
 其中，$C_k$是D中属于第k类的样本子集，K是类的个数
 
-如果样本集和D根据特征A是否取某一个可能值a被分割为$D_1$ & $D_2$，则在特征A的条件下，集和D的基尼系数定义为:
+如果样本集和D根据特征A是否取某一个可能值a被分割为$D_1$ & $D_2$，则在特征A的条件下，集和D的基尼系数定义为:    
 
 $$Gini(D,A) = \frac{|D_1|}{|D|}Gini(D_1) + \frac{|D_2|}{|D|} Gini(D_2)$$
 
