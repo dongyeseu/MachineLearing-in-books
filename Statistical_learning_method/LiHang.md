@@ -361,7 +361,7 @@ $$P(X^{(j)} = a_{jl} | Y = c_k) = \frac{\sum _i^N I(x_i^{(j)} = a_{jl} , y_i = c
 
 用最大似然估计可能会出现所要估计的概率值为0的情况，使分类产生误差，因此可以采用贝叶斯估计：
 
-$$P_{\lambda}(X^{(j)} = a_{jl} | Y = c_k) = \frac{\sum _i^N I(x_i^{(j)} = a_{jl} , y_i = c_k) + \lambda}{\sum _i^N I(y_i = c_k) + S_j * \lambda}$$
+$P_{\lambda}(X^{(j)} = a_{jl} | Y = c_k) = \frac{\sum _i^N I(x_i^{(j)} = a_{jl} , y_i = c_k) + \lambda}{\sum _i^N I(y_i = c_k) + S_j * \lambda}$
 
 $$P_{\lambda}(Y = c_k) = \frac{\sum_{i=1}^N I(y_i = c_i) + \lambda}{N + K \lambda} , k = 1,2,3,4.....,N$$
 
@@ -455,11 +455,9 @@ $$C_{\alpha} (T) = C (T) + \alpha |T|$$
 
 其中：
 
-$$\alpha \geq 0$$        
+$$\alpha \geq 0$$
 
-$$C (T) = \sum _{t=1}^{|T|} N_t H_t(T) = - \sum _{t=1}^{|T|} \sum _{k=1}{K} N_{tk} log \frac{N_{tk}}{N_t}$$ 
-
-
+$C (T) = \sum _{t=1}^{|T|} N_t H_t(T) = - \sum _{t=1}^{|T|} \sum _{k=1}{K} N_{tk} log \frac{N_{tk}}{N_t}$
 
 C(T) 表示模型对训练数据的预测误差，即模型与训练数据的拟合程度，|T|表示模型复杂度，参数$\alpha \geq 0$控制两者之间的影响。较大的$\alpha$促使选择**简单的模型**，反之促使选择**复杂的模型**。
 
