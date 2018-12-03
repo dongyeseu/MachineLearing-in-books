@@ -165,7 +165,7 @@ $$ E(f ; D) = bias^2(x) + var(x) + \epsilon^2$$
 
 [周志华《机器学习》学习笔记及习题探讨（二)](https://zhuanlan.zhihu.com/p/29248751)
 
-
+[如何计算McNeMar检验](http://www.atyun.com/25532.html)
 
 # 第3章 线性模型
 
