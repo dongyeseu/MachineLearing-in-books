@@ -395,3 +395,105 @@ $$\rho(x,c_i) = e^{-\beta_i|x - c_i|^2}$$
 [人工神经网络——径向基函数](https://blog.csdn.net/zb1165048017/article/details/49385359)
 
 [RBF神经网络简单介绍与Matlab实现](https://blog.csdn.net/weiwei9363/article/details/72808496)
+
+
+
+
+
+# 第8章 集成学习
+
+## 8.1 个体与集成
+
+**集成学习**通过构建并结合多个学习器来完成学习任务，常可获得比单一学习器显著优越的泛化能力！
+
+**个体学习器**不能太坏，并且要有“多样性”，即学习器间具有差异！
+
+***随着集成中个体分类器T的增大，集成的错误率将指数级下降，最终趋于零！***
+
+集成学习方法分类：
+
+- 个体学习器间存在强依赖关系、必须串行生成的序列方法，代表：**boosting**
+- 个体学习器之间不存在强依赖关系，可同时生成的并行化方法，代表：**bagging、Random Forest**
+
+
+
+## 8.2 Boosting
+
+**主要关注降低偏差**，因此可以基于泛化性能相当弱的学习器构建出很强的集成
+
+标准情况下只适用于二分类任务
+
+![img](https://img-blog.csdn.net/20170721161155874?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2lsbGR1YW4x/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
+
+## 8.3 Bagging 与 随机森林
+
+**主要关注于降低方差**
+
+可以适用于多分类、回归任务
+
+![img](https://img-blog.csdn.net/20170721155916928?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2lsbGR1YW4x/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
+
+## 8.4 结合策略
+
+### 平均法
+
+- 简单平均法：
+
+$$ H(x) = \frac{1}{T} \sum_{i=1}^{T} h_i(x)$$
+
+- 加权平均法：
+
+$$ H(x) = \sum_{i=1}^{T} \omega_i h_i(x)$$
+
+其中$\omega_i$是个体学习器$h_i(x)$的权重，通常$\sum_{i=1}^{T} = 1$
+
+### 投票法
+
+- 绝对多数投票法
+- 相对多数投票法
+- 加权投票法
+
+### 学习法
+
+*将个体学习器称为初级学习器，用于结合的学习器称为次级学习器或元学习器*
+
+- stacking
+
+1. 先从初始数据集中训练出初级学习器，然后“生成”一个新数据集用于训练次级学习器
+
+![img](https://img-blog.csdn.net/20170721161559683?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2lsbGR1YW4x/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
+
+## 8.5 多样性
+
+**个体学习器准确性越高，多样性越大，则集成越好**
+
+#### 多样性度量
+
+- 不合度量
+- 相关系数
+- Q-统计量
+- k-统计量
+
+#### 多样性增强
+
+- 数据样本扰动
+- 输入属性扰动
+- 输出表示扰动
+- 算法参数扰动
+
+
+
+#### 参考博客
+
+[Hoeffding不等式](https://zh.wikipedia.org/wiki/Hoeffding%E4%B8%8D%E7%AD%89%E5%BC%8F)
+
+[Adaboost算法的原理及推导](https://blog.csdn.net/v_july_v/article/details/40718799)
+
+[adaboost算法分析和实例+代码](https://blog.csdn.net/guyuealian/article/details/70995333)
+
+[集成学习原理小结](http://www.cnblogs.com/pinard/p/6131423.html)
+
+[Booststrap,Bagging,Boosting](https://www.jianshu.com/p/708dff71df3a)
+
+
+
