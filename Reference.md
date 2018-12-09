@@ -1,3 +1,23 @@
+# K近邻算法
+
+[从K近邻算法、距离度量谈到KD树、SIFT+BBF算法](https://blog.csdn.net/v_july_v/article/details/8203674)
+
+[Kd树算法之思路篇](https://www.joinquant.com/post/2627)
+
+[kd树算法之详细篇](https://www.joinquant.com/post/2843)
+
+[k近邻法与kd树](https://blog.csdn.net/qll125596718/article/details/8426458)
+
+[KNN算法中KD树的应用](http://kubicode.me/2015/10/12/Machine%20Learning/KDTree-In-KNN/)
+
+[kd Tree 代码解析](https://www.cnblogs.com/eyeszjwang/articles/2432465.html)
+
+[KD Tree 算法详解及Python实现](https://blog.csdn.net/FAICULTY/article/details/79474627)
+
+[KD-Tree 算法的C++实现](https://www.jianshu.com/p/80e41da2a397)
+
+
+
 # 神经网络
 
 ## RBF（径向基神经网络）
@@ -7,10 +27,6 @@
 [人工神经网络——径向基函数](https://blog.csdn.net/zb1165048017/article/details/49385359)
 
 [RBF神经网络简单介绍与Matlab实现](https://blog.csdn.net/weiwei9363/article/details/72808496)
-
-
-
-
 
 
 
@@ -70,11 +86,11 @@
 
 [奇异值分解（SVD）原理以及在降维中的应用](https://www.cnblogs.com/pinard/p/6251584.html)
 
+[机器学习中的数学——强大的矩阵奇异值分解及其应用](https://www.cnblogs.com/LeftNotEasy/archive/2011/01/19/svd-and-applications.html)
 
+[奇异值分解原理详解及推导](https://blog.csdn.net/zhongkejingwang/article/details/43053513)
 
-
-
-
+[深度学习基础： SVD奇异值分解及其意义](http://shartoo.github.io/SVD-decomponent/)
 
 
 
