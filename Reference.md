@@ -18,6 +18,26 @@
 
 
 
+# 逻辑回归
+
+[Logistic回归计算过程](https://blog.csdn.net/ligang_csdn/article/details/53838743)
+
+[Logistc回归基础篇](https://blog.csdn.net/c406495762/article/details/77723333)
+
+[逻辑回归代码实现](https://blog.csdn.net/zouxy09/article/details/20319673)
+
+
+
+# 线性回归
+
+[线性回归原理和实现基本认识](https://blog.csdn.net/lisi1129/article/details/68925799)
+
+[线性回归Linear Regression](https://blog.csdn.net/xbinworld/article/details/43919445)
+
+[线性回归、岭回归、Lasso回归](https://blog.csdn.net/hzw19920329/article/details/77200475)
+
+
+
 # 神经网络
 
 ## RBF（径向基神经网络）
@@ -32,6 +52,8 @@
 
 # 集成学习
 
+### Adaboost算法
+
 [Adaboost算法的原理及推导](https://blog.csdn.net/v_july_v/article/details/40718799)
 
 [adaboost算法分析和实例+代码](https://blog.csdn.net/guyuealian/article/details/70995333)
@@ -43,6 +65,18 @@
 [Booststrap,Bagging,Boosting](https://www.jianshu.com/p/708dff71df3a)
 
 [集成学习之Adaboost算法原理小结](https://www.cnblogs.com/pinard/p/6133937.html)
+
+### 随机森林算法
+
+[决策树原理及Python代码实现](https://blog.csdn.net/flying_sfeng/article/details/62424225)
+
+[随机森林的原理分析及Python代码实现](https://blog.csdn.net/Flying_sfeng/article/details/64133822)
+
+[随机森林算法学习](https://blog.csdn.net/qq547276542/article/details/78304454)
+
+[Sklearn-RandomForest随机森林算法](https://blog.csdn.net/CherDW/article/details/54971771)
+
+[随机森林](http://www.cnblogs.com/maybe2030/p/4585705.html)
 
 
 
@@ -94,11 +128,13 @@
 
 
 
+# 贝叶斯算法
 
+[极大似然估计详解](https://blog.csdn.net/zengxiantao1994/article/details/72787849)
 
+[朴素贝叶斯算法原理小结](https://www.cnblogs.com/pinard/p/6069267.html)
 
-
-
+[算法杂货铺——分类算法之朴素贝叶斯分类](https://www.cnblogs.com/pinard/p/6069267.html)
 
 
 
